@@ -1,0 +1,242 @@
+/* i'm resetting the css */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+} 
+
+/* Navigation Bar */
+#navbar{
+    position: sticky;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    top: 0px;
+
+}
+
+/* Navigation Bar: LOgo and Image */
+#logo{
+    margin: 10px 34px;
+    /* box-shadow: 3px 5px 20px grey; */
+}
+
+#logo img{
+    margin: 8px 6px;
+    height: 59px;
+    border-radius: 30%;
+    box-shadow: 3px 5px 20px black;
+}
+
+/* navigation bar: list styling */
+#navbar ul {
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.4 ;
+}
+
+
+
+#navbar ul  li{
+    list-style: none;
+    font-size: 2.3rem;
+}
+
+#navbar ul  li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul  li a:hover{
+    color: black;
+    background-color: whitesmoke;
+}
+/* home section */
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 720px;
+}
+
+#home::before{
+    content: "";
+    background:url("/New\ folder/2.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89 ;
+    /* background-repeat: no-repeat; */
+    background-size: auto;
+    /* background-size: 300px 100px; */
+}
+/* utility classes */
+#home .example {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* opacity: 0.8; */
+    z-index: -1;
+    border-radius: 250px 8px;
+}
+
+
+#home .example h1{
+    font-size: 50px;
+    padding: 12px;
+    color: red;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#home .example  p{
+    /* color:whitesmoke; */
+    text-align: center;
+    font-size:26px;
+    /* font-weight: 600; */
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding: 15px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 25px;
+    font-size: 1.5rem;    
+    border-radius:25px 70px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size: 2.23rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    display: block;
+    text-align: center;
+    margin: 23px 6px;
+    border-radius: 28px;
+    background: rgb(231, 231, 222);
+    margin-bottom: 20px;
+
+}
+
+#services .box img{
+   height: 160px;
+   margin: auto;
+   display: block;
+   
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients-section{
+    position: relative;
+  
+}
+#clients img{
+    height: 150px;
+    border-radius: 70px;
+
+}
+.client-item{
+    padding:34px;
+}
+#client-section::before{
+    content:"";
+    position: absolute;
+    background:url('/New\ folder/5.jpg');
+    width: 100%;
+    height:50%;
+    z-index:-1 ;
+    opacity: 0.3;
+}
+#contact{
+    position: relative;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('/New\ folder/2.jpg') no-repeat center center/cover;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding:0.5rem ;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    border-radius: 90%;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size:1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+
+
